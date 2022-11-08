@@ -25,7 +25,7 @@ public class TennisGame3 implements TennisGame {
     }
     
     public void wonPoint(String playerName) {
-        Player player = player1.Is(playerName) ? this.player1 : this.player2;
+        IPlayer player = player1.Is(playerName) ? this.player1 : this.player2;
         player.addPoints(POINTS_POSITION);
     }
 
