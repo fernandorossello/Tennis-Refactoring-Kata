@@ -6,15 +6,15 @@ public class TennisGame3 implements TennisGame {
     private final String player1Name;
     private final String player2Name;
 
-    public TennisGame3(String p1N, String p2N) {
-        this.player1Name = p1N;
-        this.player2Name = p2N;
+    public TennisGame3(String player1Name, String player2Name) {
+        this.player1Name = player1Name;
+        this.player2Name = player2Name;
     }
 
     public String getScore() {
         String s;
         if (p1 < 4 && p2 < 4 && !(p1 + p2 == 6)) {
-            String[] p = new String[]{"Love", "Fifteen", "Thirty", "Forty"}; 
+            String[] p = new String[]{"Love", "Fifteen", "Thirty", "Forty"};
             s = p[p1];
             return (p1 == p2) ? s + "-All" : s + "-" + p[p2];
         } else {
