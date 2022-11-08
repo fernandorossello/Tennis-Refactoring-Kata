@@ -16,4 +16,8 @@ public class Player {
     public boolean Is(String playerName){
         return this.name.equals(playerName);
     }
+
+    public void addPoints(int points){
+        this.points = this.points + points;
+    }
 }
