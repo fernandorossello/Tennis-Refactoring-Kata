@@ -20,4 +20,8 @@ public class Player implements IPlayer{
     public void addPoints(int points) {
         this.points = this.points + points;
     }
+
+    public boolean pointsDidNotReach40(){
+        return this.points < 3;
+    }
 }
